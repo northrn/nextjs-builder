@@ -5,6 +5,7 @@ module.exports = {
   },
   purge: {
     content: [
+      './components/TailwindProduct.jsx',
       './pages/**/*.{js,ts,jsx,tsx}',
       './blocks/**/*.{js,ts,jsx,tsx}',
       './components/**/*.{js,ts,jsx,tsx}',
@@ -57,7 +58,10 @@ module.exports = {
       scale: {
         120: '1.2',
       },
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
     },
   },
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms')],
 }
