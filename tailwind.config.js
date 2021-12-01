@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "JIT",
+  mode: "jit",
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
